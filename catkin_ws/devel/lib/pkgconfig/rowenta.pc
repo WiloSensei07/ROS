@@ -1,0 +1,8 @@
+prefix=/home/wilo/catkin_ws/devel
+
+Name: rowenta
+Description: Description of rowenta
+Version: 0.0.0
+Cflags: -I/home/wilo/catkin_ws/src/rowenta/include
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs angles

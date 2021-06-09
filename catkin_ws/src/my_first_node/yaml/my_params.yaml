@@ -1,0 +1,6 @@
+my_string: 'Hello'
+my_integer: 1234
+my_float: 1234.5
+my_boolean: true
+my_list: ["1.0", "mixed list"]
+my_dictionary: {a: b, c: d}

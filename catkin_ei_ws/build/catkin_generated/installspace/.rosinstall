@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/wilo/catkin_ei_ws/install/setup.sh

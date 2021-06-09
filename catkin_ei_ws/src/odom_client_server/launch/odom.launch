@@ -1,0 +1,13 @@
+<launch>
+
+ <!-- Arguments -->
+ <arg name="r" default="0.15"/>
+ <arg name="l" default="0.30"/>
+ <arg name="phi1" default="0.20"/>
+ <arg name="phi2" default="0.20"/>
+
+ <node pkg="odom_client_server" name="odom_server" type="odom_server" output="screen"/>
+
+ <node name="rosservice" pkg="rosservice" type="rosservice" args="call diffodom $(arg r) $(arg phi1) $(arg phi2) $(arg l)" />
+
+</launch>

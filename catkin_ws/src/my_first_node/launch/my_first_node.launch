@@ -1,0 +1,18 @@
+<launch>
+	<group ns="first">
+		<node pkg="my_first_node" type="my_node" name="my_node" output="screen">
+			<param name="testparameter" value="a" />
+			<param name="show_windows" value="true" />
+			<rosparam file="$(find my_first_node)/yaml/my_params.yaml" command="load"/>
+		</node>
+		<rosparam file="$(find my_first_node)/yaml/my_params.yaml" command="load"/>
+	</group>
+	<group ns="second">
+		<node pkg="my_first_node" type="my_node" name="my_node" output="screen">
+			<param name="testparameter" value="a" />
+			<param name="show_windows" value="true" />
+			<rosparam file="$(find my_first_node)/yaml/my_params.yaml" command="load"/>
+		</node>
+		<rosparam file="$(find my_first_node)/yaml/my_params.yaml" command="load"/>
+	</group>
+</launch>

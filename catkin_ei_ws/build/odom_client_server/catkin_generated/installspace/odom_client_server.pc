@@ -1,0 +1,8 @@
+prefix=/home/wilo/catkin_ei_ws/install
+
+Name: odom_client_server
+Description: Description of odom_client_server
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs message_runtime
